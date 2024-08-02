@@ -4,7 +4,7 @@ import PersonalDetailPreview from './preview/PersonalDetailPreview';
 import SummeryPreview from './preview/SummeryPreview';
 import ExperiencePreview from './preview/ExperiencePreview';
 import EducationPreview from './preview/EducationPreview';
-import SkillsPreview from './preview/SkillsPreview';
+// import SkillsPreview from './preview/SkillsPreview';
 
 export default function ResumePreview() {
 
@@ -22,7 +22,7 @@ export default function ResumePreview() {
         {/* Educational  */}
         <EducationPreview resumeInfo={resumeInfo} />
         {/* Skils  */} 
-        <SkillsPreview resumeInfo={resumeInfo} />
+        {/* <SkillsPreview resumeInfo={resumeInfo} /> */}
     </div>
   )
 }

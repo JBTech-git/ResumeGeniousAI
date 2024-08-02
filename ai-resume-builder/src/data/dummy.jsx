@@ -10,7 +10,9 @@ export default{
     experience: [
       {
         company: 'Tech Solutions Inc.',
-        position: 'Senior Software Engineer',
+        position: '',
+        city:'Kolkata',
+        state:'West Bengal',
         startDate: '2021-03',
         endDate: 'Present',
         responsibilities: [
@@ -21,7 +23,9 @@ export default{
       },
       {
         company: 'Web Innovators LLC',
-        position: 'Software Engineer',
+        position: '',
+        city:'Siliguri',
+        address:'West Bengal',
         startDate: '2018-06',
         endDate: '2021-02',
         responsibilities: [

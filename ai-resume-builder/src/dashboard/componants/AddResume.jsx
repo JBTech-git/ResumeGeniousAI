@@ -40,7 +40,7 @@ export default function AddResume() {
         console.log(resp);
         if(resp){
             setLoading(false);
-            navigation('/dashboard/resume/'+uuid+'/edit');
+            navigation('/dashboard/resume/'+uuid);
         }
     },(error)=>{
         setLoading(false);

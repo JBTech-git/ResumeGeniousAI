@@ -9,7 +9,7 @@ export default function EducationPreview({resumeInfo}) {
             }
         }>Education</h2>
         <hr style={{borderColor:resumeInfo?.themeColor}} />
-        {resumeInfo?.education.map((education, index)=>(
+        {/* {resumeInfo?.education.map((education, index)=>(
             <div key={index} className='my-5'>
                 <h2 className='text-sm font-bold'
                 style={{color:resumeInfo?.themeColor}}
@@ -19,7 +19,7 @@ export default function EducationPreview({resumeInfo}) {
                 </h2>
                 <p className='text-xs my-2'>{education?.description} </p>
             </div>
-        ))}
+        ))} */}
     </div>
   )
 }

@@ -8,15 +8,27 @@ export default function Dashboard() {
   const { user } = useUser();
   const [resumeList, setResumeList]= useState([]);
 
+  // console.log(resumeList);
   useEffect(() => {
     user && getResumeList();
   }, [user]);
 
   const getResumeList = () => {
     GlobalApi.getUserResume(user?.primaryEmailAddress.emailAddress).then(
+      // (resp) => {
+      //   console.log(resp.data.data);
+      //   setResumeList(resp.data.data);
+      // }
       (resp) => {
-        console.log(resp.data.data);
-        setResumeList(resp.data.data);
+        if (resp.data && resp.data.data) {
+          setResumeList(resp.data.data);
+        } else {
+          setResumeList([]);
+        }
+      },
+      (error) => {
+        console.error(error);
+        setResumeList([]); // Handle error by setting an empty list
       }
     );
   };
